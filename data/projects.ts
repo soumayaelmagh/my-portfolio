@@ -31,7 +31,7 @@ export const projects: Project[] = [
       "Global educational platform explaining the science behind pain.",
     image:
       "https://res.cloudinary.com/df8l2xqy2/image/upload/v1762090929/Screenshot_2025-11-02_at_14.40.31_jecgfa.png",
-    tech: ["WordPress", "Tutor LMS", "Stripe", "TranslatePress"],
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS",],
     links: { live: "https://healthx360.com/", github: "https://github.com/soumayaelmagh/healthX360" }
   },
   {
