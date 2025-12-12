@@ -9,8 +9,8 @@ export const projects: Project[] = [
       "A storefront with custom shipping + optimized checkout.",
     image:
       "https://res.cloudinary.com/df8l2xqy2/image/upload/v1762035374/logo_grc5q1.png",
-    tech: ["Vanilla JS", "HTML", "CSS", "Firebase","Paystack", "Node"],
-    links: { live: "https://www.nerdcity.store/", github: "https://github.com/soumayaelmagh/nerdcity" }
+    tech: ["JS", "HTML", "CSS", "Firebase","Paystack", "Node"],
+    links: { live: "https://www.nerdcity.store/",}
   },
   {
     id: "wasila-tech",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     image:
       "https://res.cloudinary.com/df8l2xqy2/image/upload/v1762093262/logo_nunded.jpg",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS",],
-    links: { live: "https://wasila.tech/en/", github:"https://..."  }
+    links: { live: "https://wasila.tech/en/", github:"https://github.com/soumayaelmagh/hajari-minerals"  }
   },
   {
     id: "johnson-construction",
@@ -54,6 +54,6 @@ export const projects: Project[] = [
     image:
       "https://res.cloudinary.com/df8l2xqy2/image/upload/v1762098375/Screenshot_2025-11-02_at_16.45.17_xamtvk.png",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS",],
-    links: { live: "https://johnnsonmichealconstruction.com/", github:"https://..."  }
+    links: { live: "https://johnnsonmichealconstruction.com/", github:"https://github.com/soumayaelmagh/johnsonConstruction"  }
   },
 ];

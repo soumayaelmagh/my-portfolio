@@ -1,7 +1,7 @@
 import type { Experience } from "@/types/experience";
 
 export const experiences: Experience[] = [
-  {
+ /* {
     id: "attolabs",
     role: "Technical Business Analyst",
     company: "Attolabs",
@@ -16,7 +16,7 @@ export const experiences: Experience[] = [
                 "Assisted in testing and validation to ensure developed solutions met business expectations."
     ],
     stack: ["Business Analysis","Process Modeling","Jira","Figma" ],
-  },
+  },*/
   {
     id: "near-east",
     role: "Software Developer",
