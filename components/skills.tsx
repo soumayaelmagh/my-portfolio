@@ -157,7 +157,7 @@ export default function Skills() {
       viewport={{ once: true, margin: "-10% 0px" }}
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
-      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10">Capabilities</h2>
+      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10">Technologies I Work With</h2>
 
       {/* Tabs */}
       <div className="flex items-center justify-center gap-2 md:gap-3 mb-10">

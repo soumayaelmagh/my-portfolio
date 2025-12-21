@@ -149,23 +149,23 @@ export default function Hero() {
       )}
 
       {/* Content */}
-      <motion.h1
+      <motion.h2
         className="relative z-10 text-5xl md:text-7xl font-bold tracking-tight"
         initial={prefersReduced ? false : { opacity: 0, y: 20 }}
         animate={prefersReduced ? { opacity: 1 } : { opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         Hi, I’m <span className={nameClass}>Soumaya</span>
-      </motion.h1>
+      </motion.h2>
 
-      <motion.p
+      <motion.h1
         className="relative z-10 mt-4 text-lg md:text-2xl text-gray-300"
         initial={prefersReduced ? false : { opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: prefersReduced ? 0 : 0.1, duration: 0.6 }}
       >
-        Software Developer · Creative Builder · Problem Solver
-      </motion.p>
+        Full-Stack Software Engineer & Freelance Web Developer
+      </motion.h1>
 
       <motion.a
         href="#projects"
