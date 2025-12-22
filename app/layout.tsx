@@ -2,6 +2,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import {
   highlightedSkills,
@@ -71,6 +73,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         {children}
+        <Analytics />
+        <SpeedInsights />
         <Script
           id="structured-data"
           type="application/ld+json"
