@@ -17,7 +17,7 @@ function useTypewriter(text: string, speed = 40, active = true) {
 export default function About() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-20% 0px" });
-  const text = " I am a passionate software developer with experience in building scalable web applications and creative digital solutions. I love blending technology with creativity to craft experiences that stand out";
+  const text = " I am a product manager with a full-stack engineering background, focused on turning user problems into clear product decisions, practical roadmaps, and well-scoped solutions. My developer experience helps me collaborate closely with engineering teams, understand technical tradeoffs, and keep products both useful and buildable.";
   const typed = useTypewriter(text, 22, inView);
 
   return (

@@ -159,13 +159,22 @@ export default function Hero() {
       </motion.h2>
 
       <motion.h1
-        className="relative z-10 mt-4 text-lg md:text-2xl text-gray-300"
+        className="relative z-10 mt-4 text-xl md:text-3xl font-semibold text-gray-100"
         initial={prefersReduced ? false : { opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: prefersReduced ? 0 : 0.1, duration: 0.6 }}
       >
-        Full-Stack Software Engineer & Freelance Web Developer
+        Product Manager with a Full-Stack Engineering Background
       </motion.h1>
+
+      <motion.p
+        className="relative z-10 mt-4 max-w-2xl text-base md:text-lg leading-relaxed text-gray-300"
+        initial={prefersReduced ? false : { opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: prefersReduced ? 0 : 0.18, duration: 0.6 }}
+      >
+        I shape product strategy, translate user needs into clear roadmaps, and bring the technical judgment of a former full-stack developer to every decision.
+      </motion.p>
 
       <motion.a
         href="#projects"
@@ -173,7 +182,7 @@ export default function Hero() {
         whileTap={prefersReduced ? undefined : { scale: 0.97 }}
         className="relative z-10 mt-8 inline-block px-7 py-3 rounded-full font-medium bg-yellow-400 text-black shadow-lg"
       >
-        View My Work
+        Explore My Work
       </motion.a>
     </section>
   );

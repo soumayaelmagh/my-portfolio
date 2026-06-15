@@ -56,4 +56,15 @@ export const projects: Project[] = [
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS",],
     links: { live: "https://johnnsonmichealconstruction.com/", github:"https://github.com/soumayaelmagh/johnsonConstruction"  }
   },
+  {
+    id: "tahoul",
+    title: "Tahoul",
+    tagline: "Management consultancy website",
+    description:
+      "Bilingual corporate website for a Saudi consulting firm, designed to present services, positioning, and lead-generation content.",
+    image: "/tahoul.png",
+    imageFit: "contain",
+    tech: ["Web Development", "Responsive Design", "Bilingual Website"],
+    links: { live: "https://www.tahoul.com/en" },
+  },
 ];

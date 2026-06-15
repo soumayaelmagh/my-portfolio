@@ -1,8 +1,24 @@
 import type { Experience } from "@/types/experience";
 
 export const experiences: Experience[] = [
- /* {
-    id: "attolabs",
+  {
+    id: "techbuddy",
+    role: "Product Manager",
+    company: "TechBuddy",
+    location: "Remote",
+    start: "2026",
+    end: "Present",
+    bullets: [
+      "Lead product strategy and roadmap planning for web development and digital product initiatives.",
+      "Define product vision, feature priorities, and technical requirements aligned with business goals.",
+      "Collaborate with development, design, and marketing teams to deliver scalable digital solutions.",
+      "Monitor product performance and continuously improve user experience and functionality.",
+      "Manage stakeholder communication and ensure alignment between technical teams and business objectives.",
+    ],
+    stack: ["Product Strategy", "Roadmapping", "Technical Requirements", "Stakeholder Management"],
+  },
+	 /* {
+	    id: "attolabs",
     role: "Technical Business Analyst",
     company: "Attolabs",
     location: "Istanbul, Turkey (Remote)",

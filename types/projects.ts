@@ -4,6 +4,7 @@ export type Project = {
   tagline?: string;
   description: string;
   image: string;        // remote url or /public path
+  imageFit?: "cover" | "contain";
   tech: string[];       // ["Next.js","Tailwind","Node"]
   links?: { live?: string; github?: string; caseStudy?: string };
 };

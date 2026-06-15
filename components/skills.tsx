@@ -29,8 +29,11 @@ const DATA: Record<string, Skill[]> = {
   Tools: [
     { name: "Git/GitHub", level: 95, note: "Actions, monorepos", icon: "git" },
     { name: "Docker", level: 80, note: "Local envs", icon: "docker" },
-    { name: "Shopify/WordPress", level: 90, note: "Apps & plugins", icon: "shop" },
-    { name: "Figma", level: 50, note: "Handoff, prototypes", icon: "figma" },
+    { name: "Figma", level: 75, note: "Handoff, prototypes", icon: "figma" },
+    { name: "Asana", level: 85, note: "Roadmaps, delivery tracking", icon: "asana" },
+    { name: "Zapier", level: 80, note: "Workflow automation", icon: "zapier" },
+    { name: "WordPress", level: 90, note: "CMS builds, plugins", icon: "wordpress" },
+    { name: "Shopify", level: 90, note: "Stores, apps, checkout", icon: "shop" },
   ],
 };
 
@@ -136,6 +139,33 @@ function SkillIcon({ id }: { id?: string }) {
           <path d="M9 15h3a3 3 0 1 1-3 3v-3Z" fill="#1ABCFE"/>
           <path d="M9 3v6H6a3 3 0 1 1 0-6h3Z" fill="#A259FF"/>
           <path d="M9 9v6H6a3 3 0 1 1 0-6h3Z" fill="#0ACF83"/>
+        </svg>
+      );
+    case "asana":
+      return (
+        <svg viewBox="0 0 24 24" className={common}>
+          <circle cx="12" cy="6.5" r="3.3" fill="#F06A6A"/>
+          <circle cx="7" cy="15.5" r="3.3" fill="#FFB74D"/>
+          <circle cx="17" cy="15.5" r="3.3" fill="#F06292"/>
+        </svg>
+      );
+    case "zapier":
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="#FF4A00" strokeWidth="2" strokeLinecap="round">
+          <path d="M12 3v18" />
+          <path d="M3 12h18" />
+          <path d="m5.6 5.6 12.8 12.8" />
+          <path d="m18.4 5.6-12.8 12.8" />
+        </svg>
+      );
+    case "wordpress":
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none">
+          <circle cx="12" cy="12" r="9" fill="#21759B"/>
+          <path d="M5.5 12a6.5 6.5 0 0 1 1.2-3.8L9.9 17a6.5 6.5 0 0 1-4.4-5Z" fill="#fff"/>
+          <path d="M12 18.5c-.5 0-.9 0-1.4-.1l2-5.8 2.1 5.6c-.8.2-1.7.3-2.7.3Z" fill="#fff"/>
+          <path d="M18.5 12a6.5 6.5 0 0 1-3.1 5.5l2-5.8c.4-1 .5-1.8.5-2.4 0-.3 0-.6-.1-.8.5 1 .7 2.2.7 3.5Z" fill="#fff"/>
+          <path d="M8.4 7.3c1-.5 2.2-.8 3.6-.8 1.7 0 3.2.6 4.4 1.6-.5 0-1 .4-1 1 0 .4.2.8.4 1.2.2.4.4.9.4 1.5 0 .4-.2 1-.4 1.8l-.6 2-2.3-6.8c.4 0 .7-.1.7-.1.4 0 .3-.6 0-.6 0 0-1 .1-1.7.1-.6 0-1.6-.1-1.6-.1-.4 0-.4.6 0 .6 0 0 .3.1.7.1l1 2.8-1.4 4.1-2.3-6.9c.4 0 .7-.1.7-.1.4 0 .3-.6 0-.6 0 0-.8.1-1.5.1Z" fill="#fff"/>
         </svg>
       );
     default:
@@ -286,4 +316,3 @@ function SkillRing({ skill, delay = 0 }: { skill: Skill; delay?: number }) {
     </motion.div>
   );
 }
-
